@@ -24,7 +24,7 @@ function HeroBar(){
                 </motion.div>
 
                 <div className="flex flex-col mx-24">
-                    <span className="text-white text-xl  mt-3" style={{letterSpacing : '2px'}}> Currently in Fourth Year Of pursuing a B.E. in Computer Science student. <pre></pre>I am a Full Stack developer and Open Source Contributor at <h5>JSON Schema.</h5> </span>
+                    <span className="text-white text-xl  mt-3" style={{letterSpacing : '2px'}}>🌱 Currently in Fourth Year Of pursuing a B.E. in Computer Science student.<pre></pre>I am a Full Stack developer and Open Source Contributor at <h5>JSON Schema.</h5> </span>
                     <div className="flex flex-row gap-2">
                             <h4 className="social-follow mt-5">Follow me, here </h4>
                             <PiSmileyMeltingFill  size={30} className="mt-6 text-white relative"/>
