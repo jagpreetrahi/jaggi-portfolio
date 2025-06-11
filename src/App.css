@@ -1,3 +1,16 @@
 body {
    background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
 }
+
+.social-icon{
+   font-family: "Savate", sans-serif;
+   font-weight : bold;
+   font-size : 20px
+}
+
+.social-follow{
+    letterSpacing : '2px';
+    font-family: "Miltonian";
+   font-size : 25px;
+   color : white
+}
