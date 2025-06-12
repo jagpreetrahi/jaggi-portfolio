@@ -14,3 +14,8 @@ body {
    font-size : 25px;
    color : white
 }
+
+.skill-box { 
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
