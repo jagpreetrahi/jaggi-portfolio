@@ -1,29 +1,32 @@
 import { motion } from "motion/react"
-import { useState } from "react"
+import { useMediaQuery } from 'react-responsive';
 import { BsLinkedin } from "react-icons/bs";
 import { BsSlack } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsTwitterX } from "react-icons/bs";
 import { PiSmileyMeltingFill } from "react-icons/pi";
+
+
 function HeroBar(){
 
-   
+   const isMediumUp = useMediaQuery({ minWidth: 768 });
+   const xValue = isMediumUp ? 100 : 10;
 
     return (
         <>
            
-          <div className="flex relative items center flex-col md:flex-row justify-between mt-24">
+          <div className="flex relative items center flex-col-reverse md:flex-row justify-between mt-10 md:mt-24">
              
-            <div className="mx-10 px-2 py-1 md:px-4 md:py-2">
+            <div className="md:mx-10 px-2 py-1 md:px-4 md:py-2">
                 
-                <motion.div initial={{x:-100, opacity:0}} animate={{x:100 , opacity:1}} transition={{duration:0.8, ease:"easeOut"}} className="md:text-3xl text-white font-bold">
+                <motion.div initial={{x: -xValue, opacity:0}} animate={{x: xValue , opacity:1}} transition={{duration:0.8, ease:"easeOut"}} className="mx-5 md:text-3xl text-white font-bold">
                     
                   <h1 style={{fontFamily : "Savate" , letterSpacing : '3px'}}>I'm Jagpreet Singh Rahi </h1>
                   
                     
                 </motion.div>
 
-                <div className="flex flex-col mx-24">
+                <div className="flex flex-col mx-5 md:mx-36">
                     <span className="text-white text-xl  mt-3" style={{letterSpacing : '2px'}}>🌱 Currently in Fourth Year Of pursuing a B.E. in Computer Science student.<pre></pre>I am a Full Stack developer and Open Source Contributor at <h5>JSON Schema.</h5> </span>
                     <div className="flex flex-row gap-2">
                             <h4 className="social-follow mt-5">Follow me, here </h4>
@@ -61,8 +64,8 @@ function HeroBar(){
 
 
             </div>
-            <div className="px-2 py-1 md:px-4 md:py-2">
-                <motion.img src="own.jpg" alt="profile image" initial={{x:100, opacity:0, rotate: -6}} animate={{x:-120 , opacity:1 , rotate: 4}} transition={{duration:0.8, ease:"easeOut"}} className="md:max-w-xs border-none rounded-lg ">
+            <div className="px-10 py-5 md:px-4 md:py-2 mb-9">
+                <motion.img src="own.jpg" alt="profile image" initial={{x: xValue, opacity:0, rotate: -6}} animate={{x: -xValue, opacity:1 , rotate: 4}} transition={{duration:0.8, ease:"easeOut"}} className="w-52 md:w-2xl border-none rounded-lg ">
                 
                </motion.img>
             </div>

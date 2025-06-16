@@ -1,5 +1,5 @@
 import { motion, stagger } from "motion/react";
-import experience from "./../data/work-experience.json"
+import educationData from "./../data/education.json"
 import { BiBriefcase } from "react-icons/bi";
 import { useInView } from "react-intersection-observer";
 
@@ -17,13 +17,13 @@ const itemsVariants = {
     show: {opacity : 1 , y:0 , transition: { duration: 0.7, ease: "easeOut" }}
 }
 
-function Experience(){
+function Education(){
 
     const [ref , inView] = useInView({triggerOnce : true , threshold : 0.25})
 
     return (
     <section className="py-16 px-4 " id="work-experience">
-      <h2 className="text-3xl font-bold mb-10 text-white mx-10 md:mx-40 mt-12">Work Experience</h2>
+      <h2 className="text-3xl font-bold mb-10 text-white mx-10 md:mx-40 mt-12" style={{letterSpacing : '3px' , fontFamily :'Roboto , sans-serif'}}>Education</h2>
         
        
       <motion.ul
@@ -33,9 +33,9 @@ function Experience(){
         animate={inView ? "show" : "hidden"}
         className="space-y-8 w-full"
       >
-        {experience.map((exp, idx) => (
+        {educationData.map((exp, idx) => (
           <motion.li
-            key={exp.company + idx}
+            key={exp.education + idx}
             variants={itemsVariants}
             className="list-none"
           >
@@ -46,10 +46,10 @@ function Experience(){
                    
                 </span>
               <div className="md:w-full">
-                <h3 className="text-xl font-semibold">{exp.company}</h3>
-                <p className="text-gray-600">{exp.role}</p>
+                <h3 className="text-xl font-semibold">{exp.education}</h3>
+                <p className="text-gray-600">{exp.college}</p>
                 <span className="text-gray-500 mt-2 md:mt-0">{exp.period}</span>
-              <p className="mt-4 text-gray-700">{exp.description}</p>
+              <p className="mt-4 text-gray-700">{exp.percentage}</p>
               </div>
               
             </div>
@@ -64,4 +64,4 @@ function Experience(){
     
 }
 
-export default Experience;
+export default Education;
