@@ -2,37 +2,37 @@
     {
         "name" : "Flight Management System",
         "status" : "Paused",
-        "description" : "",
+        "description" : "A Micro-Service Backend Project that allows to user search and book the flight",
         "gradientClass": "hover:bg-gradient-to-r hover:from-red-500 hover:to-purple-600",
         "tech" : ["Express JS" , "Node JS" , "Mysql" , "Sequelize-CLI", "JavaScript" ]
     },
     {
         "name" : "JSON Schema Visualization Tool",
         "status" : "Active",
-        "description" : "",
+        "description" : "A tool that helps to visualize the JSON Schema in graphical representation with supports all the dialects",
         "tech" : ["TypeScript" , "React" , "Tailwind" , "HyperJump", "CytoScape.js" ]
     },
     {
         "name" : "Twitter Backend",
         "status" : "Paused",
-        "description" : "",
+        "description" : "A Mono-repo project that allows to user for creating, searching , posting, commenting on tweets.",
         "tech" : ["Express JS" , "Node JS" , "Mongo DB" , "Mongoose", "TypeScript" ]
     },
     {
         "name" : "Paytm Clone",
         "status" : "Upcoming",
-        "description" : "",
+        "description" : "A frontend based project with story-book component.",
         "tech" : ["React JS" , "Vite" , "Tailwind" , "TypeScript" , "Motion"]
     },
     {
         "name" : "Multi Model Chatbot",
         "status" : "Paused",
-        "description" : "",
-        "tech" : ["Python" , "A.I." , "M.L." , "NLP" , "StreamLit"]
+        "description" : "A chatbot that allows users to chat via voice and text with the chatbot.",
+        "tech" : ["Python" , "Artificial Intelligence" , "Machine Learning" , "NLP" , "StreamLit"]
     },{
         "name" : "Course Selling App",
         "status" : "Upcoming",
-        "description" : "",
+        "description" : "An application that provides all free course in multiple domains to the users",
         "tech" : ["TypeScript" , "React JS" , "Postgres" , "Prisma" , "Open API" , "Express JS"]
     }
 ]

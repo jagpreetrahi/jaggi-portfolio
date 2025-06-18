@@ -51,3 +51,35 @@ body {
    font-size : 25px
 }
 
+.contact{
+   color : white;
+   letterSpacing : '1px';
+   font-size : 25px
+}
+.contact-msg{
+   color : white;
+   letterSpacing : '1px';
+   font-size : 15px;
+   
+}
+
+.contact-details{
+   color : white;
+   letterSpacing : '2px';
+   fontFamily : 'Rubik, sans-serif';
+   font-size : 20px
+}
+
+
+
+#detail:hover{
+   background: linear-gradient(90deg, #ff6a00 0%, #ee0979 50%, #00c3ff 100%);
+}
+
+#project-container:hover{
+   
+   background: linear-gradient(90deg, #ff6a00 0%, #ee0979 50%, #00c3ff 100%);
+   
+
+}
+

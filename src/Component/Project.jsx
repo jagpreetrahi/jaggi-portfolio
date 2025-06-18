@@ -24,17 +24,17 @@ function Project(){
                             className="list-none"
                         >
            
-                        <div className={`w-4/5 min-h-50 bg-neutral-800 rounded-lg shadow-lg mx-10 md:mx-20 p-4 flex flex-col justify-between ${project.gradientClass}`}>
+                        <div id="project-container" className={`w-4/5 min-h-50 bg-neutral-800 rounded-lg shadow-lg mx-10 md:mx-20 p-4 flex flex-col justify-between ${project.gradientClass}`}>
                             <a className="w-full text-left cursor-pointer">
                             <div className="flex flex-row justify-between items-center">
                                 <h3 className="text-sm font-semibold text-white">{project.name}</h3>
                                 <span className={`text-gray-900 mr-2  px-2 scroll-py-1 rounded-3xl ${project.status === 'Active' ? 'bg-green-500 animate-bounce' : 'bg-blue-500' }`}>{project.status}</span>
                             </div>
-                            <span className="text-gray-400  mt-2">{project.description}</span>
-                            <ul className="flex flex-wrap gap-2">
+                            <span  className="text-gray-400  mt-3 ">{project.description}</span>
+                            <ul className="flex flex-wrap gap-2 mt-3">
                                 {project.tech.map((tech) => (
                                 <li key={tech}>
-                                    <span className="rounded-md px-1 py-1 bg-neutral-700 text-white text-xs font-mono">{tech}</span>
+                                    <span className="rounded-md px-1 py-1  bg-neutral-700 text-white text-xs font-mono">{tech}</span>
                                 </li>
                                 ))}
                             </ul>

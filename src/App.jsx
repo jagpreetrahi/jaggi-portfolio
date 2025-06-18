@@ -2,6 +2,7 @@
 import './App.css'
 import ShowArticles from './Component/Article'
 import BottomBar from './Component/Bottombar'
+import Contact from './Component/contact'
 import Education from './Component/Education'
 import Experience from './Component/Experience'
 import HeroBar from './Component/HeroBar'
@@ -22,6 +23,7 @@ function App() {
         <Project/>
         <ShowArticles/>
         <SkillSection/>
+        <Contact/>
         <BottomBar/>
     </>
   )
