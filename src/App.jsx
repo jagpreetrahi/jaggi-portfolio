@@ -6,6 +6,7 @@ import Education from './Component/Education'
 import Experience from './Component/Experience'
 import HeroBar from './Component/HeroBar'
 import NavigationBar from './Component/NavigationBar'
+import Project from './Component/Project'
 import SkillSection from './Component/Skill-section'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <HeroBar/>
         <Education/>
         <Experience/>
+        <Project/>
         <ShowArticles/>
         <SkillSection/>
         <BottomBar/>

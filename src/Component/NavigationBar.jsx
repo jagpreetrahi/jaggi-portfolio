@@ -11,9 +11,9 @@ function NavigationBar() {
   const [isOpen , setIsOpen] = useState(false);
   return (
     <nav className="w-full">
-      <div className="flex mt-6 flex-row items-center md:justify-around gap-2 md:gap-6">
+      <div className="flex mt-6 flex-row  md:justify-around gap-2 md:gap-8">
         {/* Profile Image */}
-        <div className="mx-16 md:mx-2  mt-10">
+        <div className="mx-4 md:mx-8  mt-10">
           <img
             src="own.jpg"
             alt="Portfolio Image"

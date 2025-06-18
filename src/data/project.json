@@ -1,0 +1,38 @@
+[
+    {
+        "name" : "Flight Management System",
+        "status" : "paused",
+        "description" : "",
+        "gradientClass": "hover:bg-gradient-to-r hover:from-red-500 hover:to-purple-600",
+        "tech" : ["Express JS" , "Node JS" , "Mysql" , "Sequelize-CLI", "JavaScript" ]
+    },
+    {
+        "name" : "JSON Schema Visualization Tool",
+        "status" : "acitve",
+        "description" : "",
+        "tech" : ["TypeScript" , "React" , "Tailwind" , "HyperJump", "CytoScape.js" ]
+    },
+    {
+        "name" : "Twitter Backend",
+        "status" : "paused",
+        "description" : "",
+        "tech" : ["Express JS" , "Node JS" , "Mongo DB" , "Mongoose", "TypeScript" ]
+    },
+    {
+        "name" : "Paytm Clone",
+        "status" : "Upcoming",
+        "description" : "",
+        "tech" : ["React JS" , "Vite" , "Tailwind" , "TypeScript" , "Motion"]
+    },
+    {
+        "name" : "Multi Model Chatbot",
+        "status" : "paused",
+        "description" : "",
+        "tech" : ["Python" , "A.I." , "M.L." , "NLP" , "StreamLit"]
+    },{
+        "name" : "Course Selling App",
+        "status" : "Upcoming",
+        "description" : "",
+        "tech" : ["TypeScript" , "React JS" , "Postgres" , "Prisma" , "Open API" , "Express JS"]
+    }
+]

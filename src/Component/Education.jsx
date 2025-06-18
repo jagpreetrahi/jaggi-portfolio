@@ -23,7 +23,7 @@ function Education(){
 
     return (
     <section className="py-16 px-4 " id="work-experience">
-      <h2 className="text-3xl font-bold mb-10 text-blue-500 mx-10 md:mx-40 mt-12" style={{letterSpacing : '3px' , fontFamily :'Roboto , sans-serif'}}>Education</h2>
+      <h2 className="text-3xl font-bold mb-10 mx-auto md:mx-52 text-blue-500  mt-12" style={{letterSpacing : '3px' , fontFamily :'Roboto , sans-serif'}}>Education</h2>
         
        
       <motion.ul
@@ -40,7 +40,7 @@ function Education(){
             className="list-none"
           >
            
-            <div className="min-w-fit md:w-2/4 h-2/4 bg-neutral-800  flex flex-row mt-2 mx:20 md:mx-80  gap:2 md:gap-4">
+            <div className="min-w-fit md:w-2/4 h-2/4 bg-neutral-800  flex flex-row mt-2 mx:20 md:mx-80  gap:2 md:gap-4" style={{ boxShadow: '-10px 0 15px -7px blue' }}>
                 <span className="z-10 flex items-center justify-center w-9 h-9 mr-5 px-2 py-1  border-4 border-blue-500 rounded-full shadow-md text-xl ml-5 mt-2">
                    <BiBriefcase color="white" size={24}/>
                    
