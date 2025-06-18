@@ -14,9 +14,9 @@ function ShowArticles(){
 
     const [ref , inView] = useInView({triggerOnce : true})
       return (
-        <div className="w-22 md:w-full flex flex-col items-center py-12">
-          <motion.h2 ref={ref} initial={{y:-100, opacity:0}} animate={inView ? {y:-40 , opacity:1} : {}} transition={{duration:0.8, delay : '0.5'}} className="mx-auto text-3xl text-white md:text-6xl items-center font-bold  mb:10 md-mb-24 mt-14" style={{letterSpacing : '2px' , fontFamily : 'Riot'}}>Articles</motion.h2>
-          <div className="grid grid-cols-1 mt-6   md:grid-cols-3 gap-4 md:gap-10 mb-2  md:mb-4">
+        <div className="w-22 md:w-full flex flex-col  py-12">
+          <motion.h2 ref={ref} initial={{y:-100, opacity:0}} animate={inView ? {y:-40 , opacity:1} : {}} transition={{duration:0.8, delay : '0.5'}} className="mx-10 md:mx-40 text-xl text-blue-500 md:text-5xl items-center font-bold  mb:2 md-mb-24 mt-28" style={{letterSpacing : '2px' , fontFamily : 'Riot'}}>Articles</motion.h2>
+          <div className="grid grid-cols-1 mt-5  mx-10 md:mx-20 md:grid-cols-3 gap-4 md:gap-8 mb-2  md:mb-4">
             {articleData.map((data, index) => (
               <Article key={data.name} img= {data.img} name={data.name} url={data.url} delay={index * 300} />
             ))}
@@ -51,7 +51,7 @@ function Article({img, name, url , delay}){
                 transition={{ duration: 0.5, delay: 0.5 }}
                 className="flex flex-col relative items-center
                     px-2 py-1 md:px-4 md:py-2
-                     mx-4 md:mx-8
+                     mx-14 md:mx-8
                     w-48 h-64 md:w-64 md:h-80
                     max-w-64 max-h-80
                     overflow-hidden

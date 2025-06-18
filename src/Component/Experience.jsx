@@ -23,7 +23,7 @@ function Experience(){
 
     return (
     <section className="py-16 px-4 " id="work-experience">
-      <h2 className="text-3xl font-bold mb-10 text-white mx-10 md:mx-40 mt-12">Work Experience</h2>
+      <h2 className="text-3xl font-bold mb-10 text-blue-500 mx-10 md:mx-40 mt-2">Work Experience</h2>
         
        
       <motion.ul
@@ -31,25 +31,32 @@ function Experience(){
         variants={containerVariants}
         initial="hidden"
         animate={inView ? "show" : "hidden"}
-        className="space-y-8 w-full"
+        className="space-y-12"
       >
         {experience.map((exp, idx) => (
           <motion.li
             key={exp.company + idx}
             variants={itemsVariants}
-            className="list-none"
+            className="list-none gap-4 flex justify-center"
           >
            
-            <div className="flex flex-row  mx:20 md:mx-80  gap:6 md:gap-12">
-                <span className="z-10 flex items-center justify-center w-11 h-11 mr-5 px-2 py-1  border-4 border-blue-500 rounded-full shadow-md text-2xl ml-10">
-                   <BiBriefcase color="white" size={24}/>
+            <div className="flex flex-row  mx:20 md:mx-60  gap:1 md:gap-2  bg-neutral-800 w-11/12 md:w-3/5">
+                <span className="z-10 flex items-center justify-center w-9 h-9 mt-2 mr-5 px-2 py-1  border-4 border-blue-500 rounded-full shadow-md text-xl ml-4">
+                   <BiBriefcase color="white" size={24}/> 
                    
                 </span>
-              <div className="md:w-full">
-                <h3 className="text-xl font-semibold">{exp.company}</h3>
-                <p className="text-gray-600">{exp.role}</p>
-                <span className="text-gray-500 mt-2 md:mt-0">{exp.period}</span>
-              <p className="mt-4 text-gray-700">{exp.description}</p>
+              <div className="md:w-full mt-2 max-h-screen">
+                <h3 className="text-xl font-semibold text-white">{exp.company}</h3>
+                <p className="text-gray-400">{exp.role}</p>
+                <span className="text-gray-400 mt-2 md:mt-0">{exp.period}</span>
+               <p className="mt-4 text-gray-400">{exp.description}</p>
+             <ul className="flex flex-row mt-4 gap-1 md:gap-3 mb-4 w-full">
+                {exp.techStack.map((tech) => (
+                  <li key={tech}>
+                    <span className=" rounded-md px-2 py-1  bg-neutral-700 text-white">{tech}</span>
+                  </li>
+                ))}
+              </ul>
               </div>
               
             </div>
