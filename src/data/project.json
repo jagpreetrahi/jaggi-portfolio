@@ -4,35 +4,41 @@
         "status" : "Paused",
         "description" : "A Micro-Service Backend Project that allows to user search and book the flight",
         "gradientClass": "hover:bg-gradient-to-r hover:from-red-500 hover:to-purple-600",
-        "tech" : ["Express JS" , "Node JS" , "Mysql" , "Sequelize-CLI", "JavaScript" ]
+        "tech" : ["Express JS" , "Node JS" , "Mysql" , "Sequelize-CLI", "JavaScript" ],
+        "url" : "https://github.com/jagpreetrahi/Airline_System_Project"
     },
     {
         "name" : "JSON Schema Visualization Tool",
         "status" : "Active",
         "description" : "A tool that helps to visualize the JSON Schema in graphical representation with supports all the dialects",
-        "tech" : ["TypeScript" , "React" , "Tailwind" , "HyperJump", "CytoScape.js" ]
+        "tech" : ["TypeScript" , "React" , "Tailwind" , "HyperJump", "CytoScape.js" ],
+        "url" : "https://github.com/jagpreetrahi/visualize-json-schema"
     },
     {
         "name" : "Twitter Backend",
         "status" : "Paused",
         "description" : "A Mono-repo project that allows to user for creating, searching , posting, commenting on tweets.",
-        "tech" : ["Express JS" , "Node JS" , "Mongo DB" , "Mongoose", "TypeScript" ]
+        "tech" : ["Express JS" , "Node JS" , "Mongo DB" , "Mongoose", "TypeScript" ],
+        "url" : ""
     },
     {
         "name" : "Paytm Clone",
         "status" : "Upcoming",
         "description" : "A frontend based project with story-book component.",
-        "tech" : ["React JS" , "Vite" , "Tailwind" , "TypeScript" , "Motion"]
+        "tech" : ["React JS" , "Vite" , "Tailwind" , "TypeScript" , "Motion"],
+        "url" : "https://github.com/jagpreetrahi/Paytm_Project"
     },
     {
         "name" : "Multi Model Chatbot",
         "status" : "Paused",
         "description" : "A chatbot that allows users to chat via voice and text with the chatbot.",
-        "tech" : ["Python" , "Artificial Intelligence" , "Machine Learning" , "NLP" , "StreamLit"]
+        "tech" : ["Python" , "Artificial Intelligence" , "Machine Learning" , "NLP" , "StreamLit"],
+        "url" : "https://github.com/jagpreetrahi/Chatbot_Using_NLP"
     },{
         "name" : "Course Selling App",
         "status" : "Upcoming",
         "description" : "An application that provides all free course in multiple domains to the users",
-        "tech" : ["TypeScript" , "React JS" , "Postgres" , "Prisma" , "Open API" , "Express JS"]
+        "tech" : ["TypeScript" , "React JS" , "Postgres" , "Prisma" , "Open API" , "Express JS"],
+        "url" : ""
     }
 ]

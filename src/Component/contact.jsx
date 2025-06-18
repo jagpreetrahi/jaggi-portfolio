@@ -35,11 +35,11 @@ const ContactDetail = ({isClick, onClose}) => {
     return (
         isClick && (
             <div className="fixed inset-0  flex items-center justify-center bg-black bg-opacity-50 z-50">
-                <div className="bg-neutral-700 w-full h-full md:h-2/4 md:w-2/4 p-8 rounded-lg shadow-lg relative">
+                <div className="bg-neutral-700 w-fit h-full md:h-2/4 md:w-2/4 p-8 rounded-lg shadow-lg relative">
                     <button onClick={onClose} className="absolute top-2 right-4 text-white border px-2 py-1">X</button>
                     <div className="flex flex-col">
                         <span className="mx-auto text-white" style={{letterSpacing : '2px' , fontFamily : 'Roboto, sans-serif' , fontSize : '20px'}}>Let's connect😊</span>
-                         <ul className="grid grid-cols-1 md:grid-cols-2 justify-around gap-2 md:gap-16 mt-5">
+                         <ul className="grid grid-cols-1 md:grid-cols-2 justify-around gap-8 md:gap-16 mt-5">
                              <li>
                                  <div id="detail" className="w-full px-2 py-1 md:mx-4 md:py-2 rounded-md h-fit bg-blue-400 flex flex-col">
                                       <span className="contact-details">Email</span>
