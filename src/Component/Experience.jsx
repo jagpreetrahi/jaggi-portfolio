@@ -42,25 +42,25 @@ function Experience(){
             className="list-none gap-4 flex justify-center"
           >
            
-            <div className="flex flex-row  mx:20 md:mx-60  gap:1 md:gap-2  bg-neutral-800 w-11/12 md:w-3/5" style={{ boxShadow: '-10px 0 15px -7px blue' }}>
+            <div className="flex flex-row  mx:20 md:mx-60  gap:1 md:gap-2  bg-neutral-800 w-11/12 md:w-full" style={{ boxShadow: '-10px 0 15px -7px blue' }}>
                 <span className="z-10 flex items-center justify-center w-9 h-9 mt-2 mr-5 px-2 py-1  border-4 border-blue-500 rounded-full shadow-md text-xl ml-4">
                    <BiBriefcase color="white" size={24}/> 
                    
                 </span>
-              <div className="w-full mt-2 max-h-screen">
-                  <button  className="text-left">
+              <div className=" mt-2 max-h-screen">
+                  <a  className="text-left cursor-pointer">
                       <h3 className="text-xl font-semibold text-white">{exp.company}</h3>
                       <p className="text-gray-400">{exp.role}</p>
                       <span className="text-gray-400 mt-2 md:mt-0">{exp.period}</span>
-                      <p className="mt-4 text-gray-400">{exp.description}</p>
-                      <ul className="grid grid-cols-3 md:grid-cols-5 mb-2 w-full">
+                      <p className="mt-2 text-gray-400 mr-1">{exp.description}</p>
+                      <ul className="flex flex-wrap gap-2 mt-3 mb-5">
                           {exp.techStack.map((tech) => (
                             <li key={tech}>
-                              <span className=" rounded-md px-2 py-1  bg-neutral-700 text-white">{tech}</span>
+                              <span className=" rounded-md px-2 py-1   bg-neutral-700 text-white">{tech}</span>
                             </li>
                           ))}
                       </ul>
-                  </button>
+                  </a>
                   
     
                      
