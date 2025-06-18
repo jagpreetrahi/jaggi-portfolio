@@ -1,5 +1,3 @@
-import { TbMoonStars } from "react-icons/tb";
-import { useState } from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { BsSlack } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
@@ -25,15 +23,15 @@ function NavigationBar() {
        
 
         {/* Navigation Menu */}
-        <div className="fixed top-0 left-0  w-full md:w-auto  h-screen  text-white z-50 flex-col items-center justify-center md:static md:h-auto  md:flex md:flex-row md:rounded-3xl">
+        <div className="text-white ml-auto md:ml-0 mr-5 md:mr-0">
         
             
 
-            <ul className="md:mx-5 flex flex-col md:flex-row gap-6 text-lg md:gap-8 md:p-4">
-                <li><a href="#"  className="py-2 px-4"><BsGithub/></a></li>
-                <li><a href="#"  className="py-2 px-4"><BsLinkedin/></a></li>
-                <li><a href="#"  className="py-2 px-4"><BsSlack/></a></li>
-                <li><a href="#"  className="py-2 px-4"><BsTwitterX/></a></li>
+            <ul className="md:mx-5 flex flex-row  gap-6 text-lg md:gap-8 md:p-4">
+                <li><a href="#"  className="px-2 py-1 md:py-2 md:px-4"><BsGithub/></a></li>
+                <li><a href="#"  className="px-2 py-1 md:py-2 md:px-4"><BsLinkedin/></a></li>
+                <li><a href="#"  className="px-2 py-1 md:py-2 md:px-4"><BsSlack/></a></li>
+                <li><a href="#"  className="px-2 py-1 md:py-2 md:px-4"><BsTwitterX/></a></li>
               
            
             </ul>

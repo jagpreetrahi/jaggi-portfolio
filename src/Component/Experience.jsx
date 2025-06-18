@@ -2,7 +2,7 @@ import { motion, stagger } from "motion/react";
 import experience from "./../data/work-experience.json"
 import { BiBriefcase } from "react-icons/bi";
 import { useInView } from "react-intersection-observer";
-import { useState } from "react";
+
 
 const containerVariants = {
     hidden: {},
@@ -25,7 +25,7 @@ function Experience(){
 
     return (
     <section className="py-16 px-4 " id="work-experience">
-      <h2 className="text-3xl font-bold mb-10 text-blue-500 mx-10 md:mx-48 mt-2">Work Experience</h2>
+      <h2 className="text-3xl font-bold mb-10 text-blue-500 mx-2 md:mx-48 mt-2">Work Experience</h2>
         
        
       <motion.ul
@@ -33,7 +33,7 @@ function Experience(){
         variants={containerVariants}
         initial="hidden"
         animate={inView ? "show" : "hidden"}
-        className="space-y-12"
+        className="space-y-8"
       >
         {experience.map((exp, idx) => (
           <motion.li

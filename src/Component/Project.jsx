@@ -11,7 +11,7 @@ function Project(){
             <div className="flex flex-col">
                 <div className="flex flex-col">
                        <h2 className="text-3xl font-bold mb-4 text-blue-500 mx-10 md:mx-40 mt-2">Projects</h2>
-                       <span className="text-white md:ml-60">A collection of my personal work that enhances skills in Full Stack and A.I & ML applications </span>
+                       <span className="text-white md:mx-60 mx-10">A collection of my personal work that enhances skills in Full Stack and A.I & ML applications </span>
 
                 </div>
 
@@ -28,7 +28,7 @@ function Project(){
                             <a className="w-full text-left cursor-pointer">
                             <div className="flex flex-row justify-between items-center">
                                 <h3 className="text-sm font-semibold text-white">{project.name}</h3>
-                                <span className="text-gray-400 mr-4">{project.status}</span>
+                                <span className={`text-gray-900 mr-2  px-2 scroll-py-1 rounded-3xl ${project.status === 'Active' ? 'bg-green-500 animate-bounce' : 'bg-blue-500' }`}>{project.status}</span>
                             </div>
                             <span className="text-gray-400  mt-2">{project.description}</span>
                             <ul className="flex flex-wrap gap-2">

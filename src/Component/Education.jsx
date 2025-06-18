@@ -23,7 +23,7 @@ function Education(){
 
     return (
     <section className="py-16 px-4 " id="work-experience">
-      <h2 className="text-3xl font-bold mb-10 mx-auto md:mx-52 text-blue-500  mt-12" style={{letterSpacing : '3px' , fontFamily :'Roboto , sans-serif'}}>Education</h2>
+      <h2 className="text-3xl font-bold mb-10 mx-2 md:mx-52 text-blue-500  mt-12" style={{letterSpacing : '3px' , fontFamily :'Roboto , sans-serif'}}>Education</h2>
         
        
       <motion.ul
@@ -31,7 +31,7 @@ function Education(){
         variants={containerVariants}
         initial="hidden"
         animate={inView ? "show" : "hidden"}
-        className="space-y-8 w-full bg-red"
+        className="space-y-8 w-full"
       >
         {educationData.map((exp, idx) => (
           <motion.li

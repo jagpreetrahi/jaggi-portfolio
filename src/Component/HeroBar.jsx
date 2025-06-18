@@ -15,14 +15,14 @@ function HeroBar(){
              
             <div className="md:mx-24 px-2 py-1 md:px-4 md:py-2">
                 
-                <motion.div initial={{x: -xValue, opacity:0}} animate={{x: xValue , opacity:1}} transition={{duration:0.9, ease:"easeOut"}} className="mx-12 md:mx-5 md:text-3xl text-white font-bold">
+                <motion.div initial={{x: -xValue, opacity:0}} animate={{x: xValue , opacity:1}} transition={{duration:0.9, ease:"easeOut"}} className="mx-2 md:mx-5 md:text-3xl text-white font-bold">
                     
                   <p style={{fontFamily : "Savate" , letterSpacing : '0.5px'}}>Hey, I'm Jagpreet Singh Rahi </p>
                   
                     
                 </motion.div>
 
-                <div className="flex flex-col mx-12  md:mx-28">
+                <div className="flex flex-col mx-2  md:mx-28">
                   <p className="text-white text-xl mt-3">
                     🌱 I'm currently in my fourth year of pursuing a B.E. in Computer Science.
                   </p>
