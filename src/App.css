@@ -1,6 +1,11 @@
 body {
-   background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+  background-color :  #1a1a1a;
+  background-image:
+    linear-gradient(to right, rgba(229,231,235,0.1) 0.1px, transparent 1px),
+    linear-gradient(to bottom, rgba(229,231,235,0.1) 0.1px, transparent 1px);
+  background-size: 40px 40px;
 }
+
 
 .social-icon{
    font-family: "Savate", sans-serif;
@@ -9,8 +14,8 @@ body {
 }
 
 .social-follow{
-    letterSpacing : '2px';
-    font-family: "Miltonian";
+   letterSpacing : '2px';
+   font-family: "Miltonian";
    font-size : 25px;
    color : white
 }
@@ -19,3 +24,17 @@ body {
   transform-style: preserve-3d;
   backface-visibility: hidden;
 }
+
+.pages{
+   letterSpacing : '4px';
+   font-weight : normal;
+   font-size : 25px;
+   color : white
+}
+
+.content{
+   color : white;
+   letterSpacing : '2px';
+   font-size : 25px
+}
+
