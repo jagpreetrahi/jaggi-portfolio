@@ -13,7 +13,7 @@ const Contact = () => {
     return (
         <>
             <section >
-             <div className="w-full md:w-2/4 mx-auto h-fit border mt-5 rounded-lg mb-10">
+             <div className="w-fit px-4 py-2 md:w-2/4 mx-auto h-fit border mt-5 rounded-lg mb-10">
                  <div className="flex flex-col items-center gap-2">
                     <div className="flex flex-col items-center mt-3 mb-2">
                          <h4 className="contact">Let's Work Together</h4>
@@ -35,7 +35,7 @@ const ContactDetail = ({isClick, onClose}) => {
     return (
         isClick && (
             <div className="fixed inset-0  flex items-center justify-center bg-black bg-opacity-50 z-50">
-                <div className="bg-neutral-700 w-fit h-full md:h-2/4 md:w-2/4 p-8 rounded-lg shadow-lg relative">
+                <div className="bg-neutral-700 w-fit h-fit md:h-2/4 md:w-2/4 p-8 rounded-lg shadow-lg relative">
                     <button onClick={onClose} className="absolute top-2 right-4 text-white border px-2 py-1">X</button>
                     <div className="flex flex-col">
                         <span className="mx-auto text-white" style={{letterSpacing : '2px' , fontFamily : 'Roboto, sans-serif' , fontSize : '20px'}}>Let's connect😊</span>
