@@ -43,27 +43,27 @@ const ContactDetail = ({isClick, onClose}) => {
                              <li>
                                  <div id="detail" className="w-full px-2 py-1 md:mx-4 md:py-2 rounded-md h-fit bg-blue-400 flex flex-col">
                                       <span className="contact-details">Email</span>
-                                      <a href="" className="underline text-gray-900">jagpreet1615@gmail.com</a>
+                                      <a href="mailto:jagpreet1615@gmail.com&subject=Welcome, dear" className="underline text-gray-900">jagpreet1615@gmail.com</a>
                                  </div>
                              </li>
                              <li>
                                 <div id="detail"  className="w-full px-2 py-1 md:mx-4 md:py-2 rounded-md h-fit bg-blue-400 flex flex-col">
                                       <span className="contact-details">Linked</span>
-                                      <a href="" className="underline text-gray-900">@jagpreetrahi</a>
+                                      <a href="https://www.linkedin.com/in/jagpreet-singh-rahi-877396257/" className="underline text-gray-900">@jagpreetrahi</a>
                                  </div>
                              </li>
 
                              <li>
                                <div id="detail"  className="w-full px-2 py-1 md:mx-4 md:py-2 rounded-md h-fit bg-blue-400 flex flex-col transition: background 0.4s ease;">
                                       <span className="contact-details">Github</span>
-                                      <a href="" className="underline text-gray-900">@jagpreetrahi</a>
+                                      <a href="https://github.com/jagpreetrahi" className="underline text-gray-900">@jagpreetrahi</a>
                                  </div>
                              </li>
 
                              <li>
                               <div id="detail"  className="w-full px-2 py-1 md:mx-4 md:py-2 rounded-md h-fit bg-blue-400 flex flex-col">
                                       <span className="contact-details">Phone</span>
-                                      <a href="" className="underline text-gray-900">+91 9528629522</a>
+                                      <a href="tel:+91 9528629522" className="underline text-gray-900">+91 9528629522</a>
                                  </div>
                              </li>
 
