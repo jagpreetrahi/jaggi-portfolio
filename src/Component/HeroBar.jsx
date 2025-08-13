@@ -2,7 +2,6 @@ import { motion } from "motion/react"
 import { useMediaQuery } from 'react-responsive';
 
 
-
 function HeroBar(){
 
    const isMediumUp = useMediaQuery({ minWidth: 768 });

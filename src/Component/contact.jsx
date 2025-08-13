@@ -11,7 +11,7 @@ const Contact = () => {
     return (
         <>
             <section >
-             <div className="w-fit px-4 py-2 md:w-2/4 mx-auto h-fit border mt-5 rounded-lg mb-10">
+             <div className="w-fit px-4 py-2 md:w-2/4 mx-auto h-auto border mt-5 rounded-lg mb-10">
                  <div className="flex flex-col items-center gap-2">
                     <div className="flex flex-col items-center mt-3 mb-2">
                          <h4 className="contact">Let's Work Together</h4>
@@ -68,15 +68,7 @@ const ContactDetail = ({isClick, onClose}) => {
                                       <a href="tel:+91 9528629522" className="underline text-gray-900">+91 9528629522</a>
                                  </div>
                              </li>
-                             <li>
-                              <div id="detail"  className="w-full px-2 py-1 md:mx-4 md:py-2 rounded-md h-fit bg-blue-400 flex flex-col">
-                                      <FaFileAlt color="white"/>
-                                      <button onClick={resumeDownload} className="contact-details">
-                                            Resume
-                                        </button>
-                                      
-                                 </div>
-                             </li>
+                          
 
                          </ul>
                     </div>

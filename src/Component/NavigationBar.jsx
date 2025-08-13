@@ -1,10 +1,22 @@
+import { useCallback } from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsTwitterX } from "react-icons/bs";
+import { FaFileAlt } from "react-icons/fa";
 
 
 function NavigationBar() {
+
+  const downloadResume = useCallback(() => {
+      const pdfFile = 'Resume_jaggi.pdf'
+      const link = document.createElement('a');
+      link.href = pdfFile;
+      link.download = "Jagpreet_Singh.pdf"
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+  }, [])
 
 
   return (
@@ -28,10 +40,11 @@ function NavigationBar() {
             
 
             <ul className="md:mx-5 flex flex-row  gap-6 text-lg md:gap-8 md:p-4">
-                <li><a href="https://github.com/jagpreetrahi" target="_blank"  className="px-2 py-1 md:py-2 md:px-4"><BsGithub/></a></li>
+                <li><a href="https://github.com/jagpreetrahi"  target="_blank"  className="px-2 py-1 md:py-2 md:px-4"><BsGithub/></a></li>
                 <li><a href="https://www.linkedin.com/in/jagpreet-singh-rahi-877396257/" target="_blank"  className="px-2 py-1 md:py-2 md:px-4"><BsLinkedin/></a></li>
                 <li><a href="https://www.instagram.com/jatt_jaggy/"  className="px-2 py-1 md:py-2 md:px-4"><BsInstagram /></a></li>
                 <li><a href="https://x.com/jagpreet_rahi"  target="_blank" className="px-2 py-1 md:py-2 md:px-4"><BsTwitterX/></a></li>
+                <li><a className="px-2 py-1 md:py-2 md:px-4 cursor-pointer" onClick={downloadResume}> <FaFileAlt color="white"/></a></li>
               
            
             </ul>
