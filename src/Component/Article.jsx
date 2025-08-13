@@ -10,6 +10,11 @@ const articleData = [{
     name : "Coercion in JavaScript" , img:"coercion.png", url : 'https://jaggyblogs.hashnode.dev/coercion-in-javascript'
 },{
    name : "First month of coding progress with JSON Schema in GSoC" , img : "json-schema.png" ,  url : "https://medium.com/@jagpreet1615/my-gsoc-2025-first-month-of-coding-progress-with-json-schema-f277ad8ce817"
+},{
+   name : "Journey from midterm to final evaluation" , img : "final_evaluation.jpg" ,  url : "https://medium.com/@jagpreet1615/my-gsoc-journey-from-midterm-to-final-evaluation-49e7b8c5ea1c"
+},
+{
+   name : "How to deploy the frontend on AWS" , img : "aws.png" ,  url : "https://medium.com/@jagpreet1615/how-to-deploy-frontend-on-aws-a5fd96a54bd5"
 }]
 
 function ShowArticles(){
