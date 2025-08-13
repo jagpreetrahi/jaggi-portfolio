@@ -1,13 +1,11 @@
 import { useState } from "react"
+import { FaFileAlt } from "react-icons/fa";
 
 
 const Contact = () => {
 
     const [isClick , setIsClick] = useState(false);
-   
-
     const getContent = () => setIsClick(true);
-    
     const onClose = () => setIsClick(false);
 
     return (
@@ -32,6 +30,10 @@ const Contact = () => {
 }
 
 const ContactDetail = ({isClick, onClose}) => {
+
+    const resumeDownload = () => {
+
+    }
     return (
         isClick && (
             <div className="fixed inset-0  flex items-center justify-center bg-black bg-opacity-50 z-50">
@@ -39,24 +41,24 @@ const ContactDetail = ({isClick, onClose}) => {
                     <button onClick={onClose} className="absolute top-2 right-4 text-white border px-2 py-1">X</button>
                     <div className="flex flex-col">
                         <span className="mx-auto text-white" style={{letterSpacing : '2px' , fontFamily : 'Roboto, sans-serif' , fontSize : '20px'}}>Let's connect😊</span>
-                         <ul className="grid grid-cols-1 md:grid-cols-2 justify-around gap-8 md:gap-16 mt-5">
+                         <ul className="grid grid-cols-1 md:grid-cols-3 justify-around gap-8 md:gap-16 mt-5">
                              <li>
                                  <div id="detail" className="w-full px-2 py-1 md:mx-4 md:py-2 rounded-md h-fit bg-blue-400 flex flex-col">
                                       <span className="contact-details">Email</span>
-                                      <a href="mailto:jagpreet1615@gmail.com&subject=Welcome, dear" className="underline text-gray-900">jagpreet1615@gmail.com</a>
+                                      <a href="mailto:jagpreet1615@gmail.com&subject=Welcome, dear" className="underline text-gray-900">@jagpreetsingh</a>
                                  </div>
                              </li>
                              <li>
                                 <div id="detail"  className="w-full px-2 py-1 md:mx-4 md:py-2 rounded-md h-fit bg-blue-400 flex flex-col">
-                                      <span className="contact-details">Linked</span>
-                                      <a href="https://www.linkedin.com/in/jagpreet-singh-rahi-877396257/" className="underline text-gray-900">@jagpreetrahi</a>
+                                      <span className="contact-details">Linked In</span>
+                                      <a href="https://www.linkedin.com/in/jagpreet-singh-rahi-877396257/" className="underline text-gray-900">@jagpreetsingh</a>
                                  </div>
                              </li>
 
                              <li>
                                <div id="detail"  className="w-full px-2 py-1 md:mx-4 md:py-2 rounded-md h-fit bg-blue-400 flex flex-col transition: background 0.4s ease;">
                                       <span className="contact-details">Github</span>
-                                      <a href="https://github.com/jagpreetrahi" className="underline text-gray-900">@jagpreetrahi</a>
+                                      <a href="https://github.com/jagpreetrahi" className="underline text-gray-900">@jagpreetsingh</a>
                                  </div>
                              </li>
 
@@ -64,6 +66,15 @@ const ContactDetail = ({isClick, onClose}) => {
                               <div id="detail"  className="w-full px-2 py-1 md:mx-4 md:py-2 rounded-md h-fit bg-blue-400 flex flex-col">
                                       <span className="contact-details">Phone</span>
                                       <a href="tel:+91 9528629522" className="underline text-gray-900">+91 9528629522</a>
+                                 </div>
+                             </li>
+                             <li>
+                              <div id="detail"  className="w-full px-2 py-1 md:mx-4 md:py-2 rounded-md h-fit bg-blue-400 flex flex-col">
+                                      <FaFileAlt color="white"/>
+                                      <button onClick={resumeDownload} className="contact-details">
+                                            Resume
+                                        </button>
+                                      
                                  </div>
                              </li>
 
