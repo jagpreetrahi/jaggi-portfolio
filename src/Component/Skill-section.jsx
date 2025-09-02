@@ -55,8 +55,8 @@ function SkillSection() {
     const [ref , inView] = useInView({triggerOnce : true})
   return (
     <div className=" w-22 md:w-full flex flex-col  py-12">
-      <motion.h2 ref={ref} initial={{y:-100, opacity:0}} animate={inView ? {y:-40 , opacity:1} : {}} transition={{duration:0.8, delay : '0.5'}} className=" text-2xl text-blue-700 md:text-5xl  font-bold mx-10 md:mx-40 mb:10 md-mb-20 " style={{letterSpacing : '2px' , fontFamily : 'Riot'}}>Skills</motion.h2>
-      <div className="grid grid-cols-4 items-center mt-4 mx-10 md:mx-52  md:grid-cols-6 gap-2">
+      <motion.h2 ref={ref} initial={{y:-100, opacity:0}} animate={inView ? {y:-40 , opacity:1} : {}} transition={{duration:0.8, delay : '0.5'}} className=" text-2xl text-blue-700 md:text-5xl  font-bold mx-5 mb:10 md-mb-20 " style={{letterSpacing : '2px' , fontFamily : 'Riot'}}>Skills</motion.h2>
+      <div className="grid grid-cols-4 items-center mt-4 mx-10   md:grid-cols-6 gap-2">
         {mySkills.map((skill, index) => (
           <SkillBox key={skill.name} {...skill} delay={index * 300} />
         ))}

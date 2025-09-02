@@ -1,4 +1,4 @@
-import { motion, stagger } from "motion/react";
+import { motion} from "motion/react";
 import educationData from "./../data/education.json"
 import { BiBriefcase } from "react-icons/bi";
 import { useInView } from "react-intersection-observer";
@@ -23,7 +23,7 @@ function Education(){
 
     return (
     <section className="py-16 px-4 " id="work-experience">
-      <h2 className="text-3xl font-bold mb-10 mx-2 md:mx-52 text-blue-500  mt-12" style={{letterSpacing : '3px' , fontFamily :'Roboto , sans-serif'}}>Education</h2>
+      <h2 className="text-3xl font-bold mb-10 mx-2  text-blue-500  mt-12" style={{letterSpacing : '3px' , fontFamily :'Roboto , sans-serif'}}>Education</h2>
         
        
       <motion.ul
@@ -31,21 +31,20 @@ function Education(){
         variants={containerVariants}
         initial="hidden"
         animate={inView ? "show" : "hidden"}
-        className="space-y-8 w-full"
+        className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch max-w-4xl mx-auto"
       >
         {educationData.map((exp, idx) => (
           <motion.li
             key={exp.education + idx}
             variants={itemsVariants}
-            className="list-none"
+            className="h-full"
           >
            
-            <div className="min-w-fit md:w-2/4 h-2/4 bg-neutral-800  flex flex-row mt-2 mx:20 md:mx-80  gap:2 md:gap-4" style={{ boxShadow: '-10px 0 15px -7px blue' }}>
+            <div className="education-container flex items-start mx-auto bg-neutral-800 rounded-lg">
                 <span className="z-10 flex items-center justify-center w-9 h-9 mr-5 px-2 py-1  border-4 border-blue-500 rounded-full shadow-md text-xl ml-5 mt-2">
-                   <BiBriefcase color="white" size={24}/>
-                   
+                  <BiBriefcase color="white" size={24}/>
                 </span>
-              <div className="md:w-full mt-2">
+              <div className="mt-2">
                 <h3 className="text-xl font-semibold text-white">{exp.education}</h3>
                 <p className="text-gray-400">{exp.college}</p>
                 <span className="text-gray-400 mt-2 md:mt-0">{exp.period}</span>

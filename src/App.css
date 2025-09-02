@@ -1,10 +1,165 @@
 body {
   background-color :  #1a1a1a;
- 
   background-image:
     linear-gradient(to right, rgba(229,231,235,0.1) 0.1px, transparent 1px),
     linear-gradient(to bottom, rgba(229,231,235,0.1) 0.1px, transparent 1px);
   background-size: 40px 40px;
+  display: flex;              /* center the container */
+  justify-content: center;
+  padding: 30px;
+}
+.app-container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 2em;
+  position: relative;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+/* Pseudo-element for animated border */
+.app-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  padding: 4px; /* border thickness */
+  background: conic-gradient(from var(--angle), transparent 70%, blue);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; 
+          mask-composite: exclude;
+  animation: spin 5s linear infinite;
+  z-index: -1;
+}
+
+/* Contact container */
+.contact-container {
+  max-width: 50%;
+  padding: 1em;
+  position: relative;
+  border-radius: 12px;
+  
+}
+
+.contact-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 4px;
+  background: conic-gradient(from var(--angle), red, blue, green, red);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  animation: spin 5s linear infinite;
+  z-index: -1;
+}
+
+.education-container {
+  width : 400px;
+  padding: 1em;
+  position: relative;
+  border-radius: 12px;
+  transition: all 0.3 ease;
+}
+
+.education-container:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.education-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 4px;
+  background: conic-gradient(from var(--angle), red, blue, red);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  animation: spin 5s linear infinite;
+  z-index: 1;
+}
+
+.experience-container {
+  width : 400px;
+  height: 100%;
+  padding: 1em;
+  position: relative;
+  border-radius: 12px;
+  transition: all 0.3 ease;
+}
+
+.experience-container:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.experience-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 4px;
+  background: conic-gradient(from var(--angle), transparent 60%, #f4cccc);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  animation: spin 5s linear infinite;
+  z-index: 1;
+}
+
+.resume-container {
+  width : 150px;
+  height: 100%;
+  padding: 0.5em;
+  position: relative;
+  border-radius: 12px;
+  transition: all 0.3 ease;
+}
+
+.resume-container:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.resume-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 4px;
+  background: conic-gradient(from var(--angle), skyblue, blue, pink);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  animation: spin 5s linear infinite;
+  z-index: 1;
+}
+
+
+
+/* Spin animation */
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  from { --angle: 0deg; }
+  to   { --angle: 360deg; }
 }
 
 @media (max-width: 600px) {
@@ -72,14 +227,4 @@ body {
 
 
 
-#detail:hover{
-   background: linear-gradient(90deg, #ff6a00 0%, #ee0979 50%, #00c3ff 100%);
-}
-
-#project-container:hover{
-   
-   background: linear-gradient(90deg, #ff6a00 0%, #ee0979 50%, #00c3ff 100%);
-   
-
-}
 

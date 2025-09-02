@@ -22,7 +22,7 @@ function ShowArticles(){
     const [ref , inView] = useInView({triggerOnce : true})
       return (
         <div className="w-22 md:w-full flex flex-col  py-12">
-          <motion.h2 ref={ref} initial={{y:-100, opacity:0}} animate={inView ? {y:-40 , opacity:1} : {}} transition={{duration:0.8, delay : '0.5'}} className="mx-10 md:mx-40 text-2xl text-blue-500 md:text-5xl items-center font-bold  mb:2 md-mb-24 mt-16" style={{letterSpacing : '2px' , fontFamily : 'Riot'}}>Articles</motion.h2>
+          <motion.h2 ref={ref} initial={{y:-100, opacity:0}} animate={inView ? {y:-40 , opacity:1} : {}} transition={{duration:0.8, delay : '0.5'}} className="mx-5 text-2xl text-blue-500 md:text-5xl items-center font-bold  mb:2 md-mb-24 mt-16 tracking-wide" style={{letterSpacing : '2px' , fontFamily : 'Riot'}}>Articles</motion.h2>
           <div className="grid grid-cols-2 mt-5  mx-10 md:mx-20 md:grid-cols-3 gap-4 md:gap-8  md:mb-4">
             {articleData.map((data, index) => (
               <Article key={data.name} img= {data.img} name={data.name} url={data.url} delay={index * 300} />

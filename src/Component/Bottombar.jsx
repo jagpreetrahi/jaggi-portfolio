@@ -14,11 +14,11 @@ function BottomBar(){
                  
             </div>
 
-            <div className="flex flex-row justify-end md:space-x-24 mt-3 ">
+            <div className="flex flex-row justify-end md:space-x-24">
                 
-               <div className="relative mr-12 ">
+               <div className="relative mr-12">
                 
-                    <ul className="flex flex-row  gap-3 text-lg md:gap-6 md:p-4 mt-2 md:mr-5">
+                    <ul className="flex flex-row  gap-4 text-lg md:gap-8 md:p-4  md:mr-5">
                         <li><a href="https://github.com/jagpreetrahi" target="_blank"  className="px-2 py-1 md:py-2 md:px-4"><BsGithub color="white" size={20}/></a></li>
                         <li><a href="https://www.linkedin.com/in/jagpreet-singh-rahi-877396257/" target="_blank"  className="px-2 py-1 md:py-2 md:px-4"><BsLinkedin color="white" size={20}/></a></li>
                         <li><a href="https://www.instagram.com/jatt_jaggy/"  className="px-2 py-1 md:py-2 md:px-4"><BsInstagram color="white" size={20}/></a></li>

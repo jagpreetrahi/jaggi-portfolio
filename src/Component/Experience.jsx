@@ -1,4 +1,4 @@
-import { motion, stagger } from "motion/react";
+import { motion} from "motion/react";
 import experience from "./../data/work-experience.json"
 import { BiBriefcase } from "react-icons/bi";
 import { useInView } from "react-intersection-observer";
@@ -25,7 +25,7 @@ function Experience(){
 
     return (
     <section className="py-16 px-4 " id="work-experience">
-      <h2 className="text-3xl font-bold mb-10 text-blue-500 mx-2 md:mx-48 mt-2">Work Experience</h2>
+      <h2 className="text-3xl font-bold mb-10 text-blue-500 mx-2 mt-2">Work Experience</h2>
         
        
       <motion.ul
@@ -33,42 +33,35 @@ function Experience(){
         variants={containerVariants}
         initial="hidden"
         animate={inView ? "show" : "hidden"}
-        className="space-y-8"
+        className="flex flex-wrap gap-8 justify-center"
+        
       >
         {experience.map((exp, idx) => (
           <motion.li
             key={exp.company + idx}
             variants={itemsVariants}
-            className="list-none gap-4 flex justify-center"
+             className="flex-2"
           >
-           
-            <div className="flex flex-row  mx:20 md:mx-60  gap:1 md:gap-2  bg-neutral-800 w-11/12 md:w-full" style={{ boxShadow: '-10px 0 15px -7px blue' }}>
-                <span className="z-10 flex items-center justify-center w-9 h-9 mt-2 mr-5 px-2 py-1  border-4 border-blue-500 rounded-full shadow-md text-xl ml-4">
-                   <BiBriefcase color="white" size={24}/> 
+          <div className="experience-container flex items-start mx-20 md:mx-auto  rounded-lg bg-neutral-800">
+              <span className="z-10 flex items-center  w-9 h-9 mt-2 mr-3 px-2 py-1  border-4 border-blue-500 rounded-full shadow-md text-xl ml-4">
+                <BiBriefcase color="white" size={24}/> 
                    
-                </span>
-              <div className=" mt-2 max-h-screen">
+              </span>
+              <div className=" mt-2">
                   <a  className="text-left cursor-pointer">
                       <h3 className="text-xl font-semibold text-white">{exp.company}</h3>
-                      <p className="text-gray-400">{exp.role}</p>
+                      <p className="text-gray-400 mt-2">{exp.role}</p>
                       <span className="text-gray-400 mt-2 md:mt-0">{exp.period}</span>
                       <p className="mt-2 text-gray-400 mr-1">{exp.description}</p>
                       <ul className="flex flex-wrap gap-2 mt-3 mb-5">
                           {exp.techStack.map((tech) => (
                             <li key={tech}>
-                              <span className=" rounded-md px-2 py-1   bg-neutral-700 text-white">{tech}</span>
+                              <span className="rounded-md px-2 bg-neutral-700 text-white">{tech}</span>
                             </li>
                           ))}
                       </ul>
                   </a>
-                  
-    
-                     
-                   
-                 
-              </div>
-              
-              
+                </div>
             </div>
             
           </motion.li>

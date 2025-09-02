@@ -14,9 +14,8 @@ function App() {
   
 
   return (
-    <>
+    <div className='app-container' id='animated-border'>
         <NavigationBar/>
-        
         <HeroBar/>
         <Education/>
         <Experience/>
@@ -25,7 +24,7 @@ function App() {
         <SkillSection/>
         <Contact/>
         <BottomBar/>
-    </>
+    </div>
   )
 }
 

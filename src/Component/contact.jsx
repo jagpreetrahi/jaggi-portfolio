@@ -11,14 +11,14 @@ const Contact = () => {
     return (
         <>
             <section >
-             <div className="w-fit px-4 py-2 md:w-2/4 mx-auto h-auto border mt-5 rounded-lg mb-10">
+             <div className="contact-container  px-4 py-2 md:w-2/4 mx-auto h-auto mt-5  mb-10">
                  <div className="flex flex-col items-center gap-2">
                     <div className="flex flex-col items-center mt-3 mb-2">
-                         <h4 className="contact">Let's Work Together</h4>
-                         <span className="contact-msg">Get In Touch?</span>
+                         <h4 className="contact tracking-wider">Let's Work Together</h4>
+                         <span className="contact-msg tracking-wider">Get In Touch?</span>
                     </div>
 
-                    <button onClick={getContent} className="bg-blue-700 text-white px-2 py-1 md:px-4 md:py-2 rounded-xl mb-3">Contact</button>
+                    <button onClick={getContent} className="bg-blue-700 text-white px-2 py-1 md:px-4 md:py-2 rounded-xl mb-3 tracking-widest">Contact</button>
 
                  </div>
              </div>
@@ -31,9 +31,7 @@ const Contact = () => {
 
 const ContactDetail = ({isClick, onClose}) => {
 
-    const resumeDownload = () => {
-
-    }
+    
     return (
         isClick && (
             <div className="fixed inset-0  flex items-center justify-center bg-black bg-opacity-50 z-50">
